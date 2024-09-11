@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+body {
+    background-color: bisque;
+}
+
+.ingredients {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 35px;
+}
+
+.ingredients-table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.instuctions {
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.instuctions ol {
+    border: 1px solid green;
+    margin: 0 auto;
+    width: 16%;
+}
+
+.heading {
+    text-align: center
+}
+
+.lemmikroog-heading {
+    font-family: "Playpen Sans", cursive;
+    font-size: 2rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
