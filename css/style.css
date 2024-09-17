@@ -2,6 +2,7 @@
 
 body {
     background-color: bisque;
+    overflow: hidden;
 }
 
 .ingredients {
@@ -15,6 +16,16 @@ body {
 .ingredients-table {
     border: 1px solid black;
     margin: 0 auto;
+    position: relative;
+    animation: ingredients;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ingredients {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
 }
 
 .instuctions {
@@ -27,6 +38,15 @@ body {
     border: 1px solid green;
     margin: 0 auto;
     width: 16%;
+    position: relative;
+    animation: instructions;
+    animation-duration: 5s;
+}
+
+@keyframes instructions {
+    0% {right: -1000px;}
+    85% {right: 50px;}
+    100% {right: 0;}
 }
 
 .heading {
@@ -36,14 +56,32 @@ body {
 .lemmikroog-heading {
     font-family: "Playpen Sans", cursive;
     font-size: 2rem;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+}
+
+@keyframes heading {
+    0% {top: -250px;}
+    100% {top: 0;}
 }
 
 img {
+    opacity: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
     margin-top: 50px;
     margin-bottom: 50px;
+    animation: img;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes img {
+    0% {opacity: 0;}/*0 - 1*/
+    100% {opacity: 1;}
   }
 
